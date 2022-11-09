@@ -1,0 +1,567 @@
+/*Reset ligne 10*/
+/*------------- NAVBAR ---------- ligne 17*/ 
+/*------------- SECTION CONTENU ---------- ligne 56 */
+/* ------------- CONTAINER TEXT ---------- ligne 93 */
+/* ------------- SLIDE SHOW PICTURES ---------- ligne 125 */
+/* ------------- SECTION FOOTER ---------- ligne 225 */
+/*------------- MEDIA QUERY SM ---------- ligne 216 */
+/*------------- MEDIA QUERY MD ----------------------- MEDIA QUERY MD ---------- ligne 322*/
+/*------------- MEDIA QUERY LG ----------------------- MEDIA QUERY LG ---------- ligne 457*/
+
+
+/*Reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*------------- NAVBAR ----------*/
+.logo {
+  display: flex;
+  position: absolute;
+  left: 107px;
+  height: 100px;
+  width: auto;
+  z-index: 100;
+  top: 31px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:right;
+  list-style: none;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to right, #201F25, rgb(0, 0, 0) 100%);
+  }
+
+.nav a {
+ 
+  font-size: small;
+  display: block;
+  height: 20%;
+  width: 20%px;
+  margin:5px;
+  text-align: center;
+  padding: 2px;
+  border: solid 1px;
+  border-color: #FF5A00;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #201F25;
+  color: #FF5400;
+}
+
+/*------------- SECTION CONTENU ----------*/
+.section {
+  background: linear-gradient(to right, #201F25, rgb(0, 0, 0) 100%);
+  height: 650px;
+  border-top: solid 1px #FF5A00;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-art {
+  display: flex;
+  flex-direction: column;
+  height: 141px;
+  padding-bottom: 239px;
+  text-align: center;
+  margin-right: 2%;
+  
+}
+
+.button-box a{
+  display: block;
+  height: 20px;
+  width: 80px;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  border: solid 1px #FF5A00;
+  border-radius: 6px;
+  list-style: none;
+  text-decoration: none;
+  background-color: #201F25;
+  color: #FF5400;
+ 
+}
+/*------------- CONTAINER TEXT ----------*/
+
+.containertext {
+  
+  height: 480px;
+  width: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: solid 1px #FF5A00;
+  border-radius: 15px;
+  overflow: auto;
+  align-self: center;
+  margin: 0px;
+}
+
+.containertext h2 {
+  padding-top: 3%;
+  padding-left: 5%;
+  color: white;
+}
+
+.containertext p {
+  font-size: small;
+  color: white;
+  padding-top: 1%;
+  padding-left: 5%;
+  text-justify: auto;
+  overflow: visible;
+}
+
+/*------------- SLIDE SHOW PICTURES ----------*/
+.slider {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #FF5A00;
+  border-radius: 15px;
+  align-self: center;
+  height: 480px;
+  width: 768px;
+  max-width: 780px;
+  margin: 0px;
+  margin-left: 10%;
+  position: relative;
+}
+
+.slider-viewport {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  align-self: center;
+}
+
+.slider-content {
+  display: flex;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.slider-content img {
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
+.slider-nav {
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.slider-nav a {
+
+  display: inline-block;
+  background-color: #FF5A00;
+  width: 60px;
+  height: 5px;
+  margin: 0 30px;
+
+}
+
+.slider-nav a:hover {
+  background-color: #FF5A00;
+
+}
+
+#img2:target .slider-content {
+  -webkit-transform: translateX(-768px);
+  transform: translateX(-768px);
+
+}
+
+#img3:target .slider-content {
+  -webkit-transform: translateX(-1536px);
+  transform: translateX(-1536px);
+}
+
+#img4:target .slider-content {
+  -webkit-transform: translateX(-2304px);
+  transform: translateX(-2304px);
+}
+
+#img5:target .slider-content {
+  -webkit-transform: translateX(-3072px);
+  transform: translateX(-3072px);
+}
+
+/*------------- SECTION FOOTER ----------*/
+.container-foot {
+  border-top: solid 1px #FF5400;
+  background: rgb(174, 174, 174);
+  /*linear-gradient(to right, #201F25, rgb(0, 0, 0) 100%);*/
+  height: 150px;
+  width: 100%;
+
+}
+
+/*------------- MEDIA QUERY SM ----------*/
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  /*------------- NAVBAR ----------*/
+  .logo {
+  
+    left: 17px;
+    height: 70px;
+    top: 43px;
+  }
+  /*------------- SECTION CONTENU ----------*/
+  .section {
+    height: 720px;
+    width: 100%;
+  }
+  .container-art {
+    height: 350px;
+    width: auto;
+    font-size: 12px;
+    padding-top: 50px;
+    padding-bottom: 5px;;
+  }
+    .button-box a{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 10px;
+  }
+  /*------------- CONTAINER TEXT ----------*/
+  .containertext {
+    font-size: 50%;
+    height: 400px;
+    width: 200px;
+    min-width: 200px;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  
+  .containertext h2 {
+    padding-top: 3%;
+    padding-left: 5%;
+  }
+  
+
+  /*------------- SLIDE SHOW PICTURES ----------*/
+  .slider {
+
+    height: 230px;
+    width: 300px;
+    max-width: 300px;
+    margin: 0px;
+
+  }
+  
+  .slider-content img {
+    width: 300px;
+    height: 230px;
+    border-radius: 15px;
+  }
+  
+  .slider-nav {
+
+    width: 100%;
+    bottom: -20px;
+    margin-top: 0px;
+
+  }
+  
+  .slider-nav a {
+  
+
+ 
+    width: 50px;
+    height: 5px;
+    margin-top: 20px;
+    margin: 0px;
+  
+  }
+  
+ 
+  #img2:target .slider-content {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+  
+  }
+  
+  #img3:target .slider-content {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+  
+  #img4:target .slider-content {
+    -webkit-transform: translateX(-900px);
+    transform: translateX(-900px);
+  }
+  
+  #img5:target .slider-content {
+    -webkit-transform: translateX(-1200px);
+    transform: translateX(-1200px);
+  }
+  /* ----------FOOTER------------ */
+  .container-foot {
+    height: 80px;
+    width: 100%;
+  
+  }
+}
+
+/*------------- MEDIA QUERY MD ----------------------- MEDIA QUERY MD ----------*/
+
+@media only screen and (min-width: 650px) and (max-width: 960px) {
+  /*------------- NAVBAR ----------*/
+  .logo {
+  
+    left: 17px;
+    height: 70px;
+    z-index: 100;
+    top: 5px;
+  }
+  .nav {
+    height: 40px;
+    width: 100%;
+
+  
+  }
+  
+  .nav a {
+    font-size: small;
+    height: 20%;
+    width: 20%px;
+    margin:5px;
+    padding: 2px;
+
+
+  }
+  
+  /*------------- SECTION CONTENU ----------*/
+  .section {
+    height: 490px;
+    width: 100%;
+    
+  }
+  .container-art {
+    height: 350px;
+    width: auto;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 5px;;
+    margin-right: 0%;
+   
+  }
+  
+  .button-box a{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 10px;
+
+  }
+  /*------------- CONTAINER TEXT ----------*/
+  .containertext {
+    font-size: 80%;
+    height: 330px;
+    width: 200px;
+    min-width: 200px;
+    margin-right: 10px;
+    margin-top: 0px;
+    }
+  
+  .containertext h2 {
+    padding-top: 3%;
+    padding-left: 5%;
+    }
+  
+  .containertext p {
+    font-size: small;
+    padding-top: 1%;
+    padding-left: 5%;
+    text-justify: auto;
+    overflow: visible;
+  }
+  /*------------- SLIDE SHOW PICTURES ----------*/
+  .slider {
+    height: 330px;
+    width: 360px;
+    max-width: 350px;
+    margin: 0px;
+  }
+  
+  .slider-viewport {
+    width: 100%;
+    height: 100%;
+    min-width: 80%;
+    margin-top: 0px;
+  }
+  
+  .slider-content img {
+    width: 360px;
+    height: 330px;
+    border-radius: 15px;
+  }
+  
+  .slider-nav {
+    width: 100%;
+    bottom: -20px;
+    margin-top: 0px;
+  }
+  
+  .slider-nav a {
+    width: 50px;
+    height: 5px;
+    margin-top: 20px;
+    margin: 0px;
+    }
+  
+  #img2:target .slider-content {
+    -webkit-transform: translateX(-360px);
+    transform: translateX(-360px);
+  
+  }
+  
+  #img3:target .slider-content {
+    -webkit-transform: translateX(-720px);
+    transform: translateX(-720px);
+  }
+  
+  #img4:target .slider-content {
+    -webkit-transform: translateX(-1080px);
+    transform: translateX(-1080px);
+  }
+  
+  #img5:target .slider-content {
+    -webkit-transform: translateX(-1440px);
+    transform: translateX(-1440px);
+  }
+  /* ----------FOOTER------------ */
+  .container-foot {
+    height: 50px;
+    width: 100%;
+  
+  }
+}
+/*------------- MEDIA QUERY LG ----------------------- MEDIA QUERY LG ----------*/
+
+@media only screen and (min-width: 961px) and (max-width: 1213px) {
+  /*------------- NAVBAR ----------*/
+  
+  
+  /*------------- SECTION CONTENU ----------*/
+  .section {
+    height: 490px;
+    width: 100%;
+  }
+  .container-art {
+    height: 350px;
+    width: auto;
+    font-size: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;;
+    margin-right: 0%;
+   }
+  
+  .button-box a{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+
+  }
+  /*------------- CONTAINER TEXT ----------*/
+  .containertext {
+    font-size: 100%;
+    height: 330px;
+    width: 320px;
+    min-width: 320px;
+    margin-right: 10px;
+    margin-top: 0px;
+    
+  }
+  
+  .containertext h2 {
+    padding-top: 3%;
+    padding-left: 5%;
+    }
+  
+  
+  /*------------- SLIDE SHOW PICTURES ----------*/
+  .slider {
+    height: 330px;
+    width: 500px;
+    max-width: 700px;
+    margin: 0px;
+  }
+  
+  .slider-viewport {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    margin-top: 0px;
+
+  }
+  
+
+  .slider-content img {
+    width: 500px;
+    height: 330px;
+
+  }
+  
+  .slider-nav {
+
+    width: 100%;
+    bottom: -20px;
+    margin-top: 0px;
+
+  }
+  
+  .slider-nav a {
+    width: 50px;
+    height: 5px;
+    margin-top: 0px;
+    margin: 0px;
+  
+  }
+    
+  #img2:target .slider-content {
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+  
+  }
+  
+  #img3:target .slider-content {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  
+  #img4:target .slider-content {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+  
+  #img5:target .slider-content {
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+  /* ----------FOOTER------------ */
+  .container-foot {
+    height: 50px;
+    width: 100%;
+  
+  }
+}
